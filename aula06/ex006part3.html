@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ex006.css">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n1 = 1545.5
+        
+        document.write(`O número digitado é: ${n1} <br><br>`)
+
+        //Para adicionar quantas casas decimais quiser
+        document.write(`O mesmo número digitado com 2 casas decimais: ${n1.toFixed(2)} <br><br>`)
+
+        //Para trocar o ponto pela virgula
+        document.write(`O mesmo número digitado com ponto e virgula trocados: ${n1.toFixed(2).replace('.', ',')} <br><br>`)
+
+        //Para colocar o valor digitado em valor monetário
+        document.write(`Em valor monetário fica: ${n1.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'})}`)
+    </script>
+</body>
+</html>

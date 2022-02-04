@@ -10,7 +10,17 @@
 <body>
     <script>
         var nome = prompt('Qual seu nome?')
-        document.write(`Seu nome tem ${nome.length} letras.`)
+        document.write(`Você digitou: ${nome}. <br>`)
+
+        //mostrar a quantidade de letras que tem na string
+        document.write(`A string digitada deu ${nome.length} letras. <br>`) 
+
+        //deixa todas as letras da string em maiuscula
+        document.write(`Seu nome em maiúsculo fica assim: ${nome.toUpperCase()}. <br>`)
+
+        //deixa todas as letras da string em minuscula
+        document.write(`Seu nome em minusculo fica assim: ${nome.toLowerCase()}`) 
+        
     </script>
 </body>
 </html>
