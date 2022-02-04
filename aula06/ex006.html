@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ex006.css">
+    <title>ex006</title>
+</head>
+<body>
+    
+    <h1>Exercicio 006 - Curso em video/JavaScript</h1>
+    <p>Olá, mundo!</p> 
+
+    <script>
+
+        var nome = prompt('Qual seu nome?') // vai perguntar o nome..
+        alert('Prazer em te conhecer, ' + nome + '!') //Concatenação com o '+'
+
+
+        //"Number.parseInt(n)" para fazer uma conversação de string para números inteiro
+        var n1 = Number.parseInt(prompt('Digite um valor inteiro: '))
+        var n2 = Number.parseInt(prompt('Digite outro valor inteiro: '))
+        var soma = n1 + n2
+        alert('A soma dos valores é: ' + soma)
+
+
+        //"Number.parseFloat(n)" para fazer uma conversação de string para números reais
+        var n3 = Number.parseFloat(prompt('Digite um valor: '))
+        var n4 = Number.parseFloat(prompt('Digite outro valor: '))
+        var soma2 = n3 + n4
+        alert('A soma dos valores é: ' + soma2)
+
+
+        //Number(n) para fazer uma conversão de string para número, porém, ele mesmo se vira, se vai vir Float ou Inteiro
+        var n5 = Number(prompt('Digite um valor: '))
+        var n6 = Number(prompt('Digite outro valor: '))
+        var soma3 = n5 + n6
+        alert('A soma dos valores é: ' + soma3)
+
+        //Maneira de cocatenação com as `crases` seria ${var} dentro das `crases`
+        var idade = Number(prompt(`Digite a idade de ${nome}: `))
+        alert(`${nome} tem ${idade} anos!`)
+        
+    </script>
+
+</body>
+</html>
