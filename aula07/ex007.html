@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ex007.css">
+    <title>aula 07</title>
+</head>
+<body>
+    <script>
+
+        var a = 5 + 3
+        var b = a % 5
+        var c = 5 * b ** 2
+        var d = 10 - a / 2
+        var e = 6 * 2 / d
+        var f = b % e + 4 / e
+
+        document.write(`O valro de A é: ${a} <br>`)
+        document.write(`O valro de B é: ${b} <br>`)
+        document.write(`O valro de C é: ${c} <br>`)
+        document.write(`O valro de D é: ${d} <br>`)
+        document.write(`O valro de E é: ${e} <br>`)
+        document.write(`O valro de F é: ${f} <br><br>`)
+
+        //simplificando
+
+          var n = 3
+        //n = n + 4
+
+        //ao inves de "n = n + 4", pode simplificar, ficando:
+
+        n += 4
+
+        document.write(`${n} <br>`)
+
+        //Podemos também acrescentar um simplificação ainda maior que seria: "n++", porém, ela acrescenta apenas +1 e não mais que isso.
+        //Exemplo:
+
+        n++
+
+        document.write(`${n}`)
+
+        
+    </script>
+</body>
+</html>
