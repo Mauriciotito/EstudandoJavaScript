@@ -64,7 +64,20 @@
         document.write('OPERADORES LÓGICOS <br>')
 
         document.write(`a < 8 && b > a? <br> ${result3} <br><br>`)
-        document.write(`b >= a || b < a <br> ${result4}`)
+        document.write(`b >= a || b < a <br> ${result4} <br><br>`)
+
+
+        //Ternário: "?" e ":"
+
+        //Exemplo:
+
+        var media = prompt('Quanto ficou de média?')
+        var result5 = media >= 7 ? 'Aprovado':'Reprovado'
+
+        document.write('OPERADOR TERNÁRIO (sim ou não)<br>')
+
+        var nome = prompt('Qual seu nome?')
+        document.write(`${nome} ficou com a média ${media} e foi ${result5}`)
     </script>
 </body>
 </html>
