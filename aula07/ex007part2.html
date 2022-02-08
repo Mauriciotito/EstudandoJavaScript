@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +11,7 @@
 <body>
     <script>
 
-        //Relacionais: >, <, >=, <=, ==, != (semrpe acompanhado de booleano(true, false))
+        //Relacionais: >, <, >=, <=, ==, != (sempre acompanhado de booleano(true, false))
 
         //Exemplo:
 
@@ -21,7 +22,28 @@
         var n5 = 5 == 5
         var n6 = 4 != 4
 
-        document.write(`${n1} <br> ${n2} <br> ${n3} <br> ${n4} <br> ${n5} <br> ${n6}`)
+        document.write(`5 > 2? <br> ${n1} <br><br>`)
+        document.write(`7 < 4? <br> ${n2} <br><br>`)
+        document.write(`8 >= 8? <br> ${n3} <br><br>`)
+        document.write(`9 <= 7? <br> ${n4} <br><br>`)
+        document.write(`5 == 5? <br> ${n5} <br><br>`)
+        document.write(`4 != 4? <br> ${n6} <br><br>`)
+
+        //Identidade: === (se é idêntico ao outro)
+
+        //Exemplo:
+
+        var x = 5
+        var y = '5'
+
+        var result = x == y  //x é igual a y?
+        var result2 = x === y  //x é idêntico a y?
+
+        document.write(`a variavel x está no valor 5(número)<br>`)
+        document.write(`a variavel y está no valor 5(string)<br><br>`)
+
+        document.write(`x é igual(==) à 'y'? <br> ${result} <br><br>`)
+        document.write(`x é idêntico(===) à 'y'? <br> ${result2} <br>`)
 
     </script>
 </body>
