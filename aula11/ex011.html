@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ex011.css">
+    <title>Condições</title>
+</head>
+<body>
+    <h1>Sistema de país</h1>
+
+    Selecione seu país: <input type="text" name="pais" id="pais">
+    <input type="button" value="Verificar" onclick="calcular()">
+
+    <div id="res">
+        
+    </div>
+
+    <script>
+        function calcular() {
+            var br = document.getElementById('pais')
+            var res = document.getElementById('res')
+            
+            res.innerHTML = (`<p> Seu país digitado é ${br}. </p>`)
+
+            if (br == 'Brasil' || 'brasil'){
+                res.innerHTML += (`<p> Você é Brasileiro! <p>`)
+            }
+            else {
+                res.innerHTML += (`<p> Você é Estrangeiro! <p>`)
+            }
+        }
+    </script>
+
+
+</body>
+</html>
