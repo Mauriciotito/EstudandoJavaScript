@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,32 +8,35 @@
     <link rel="stylesheet" href="ex011.css">
     <title>Condições</title>
 </head>
+
 <body>
     <h1>Sistema de país</h1>
-
-    Selecione seu país: <input type="text" name="pais" id="pais">
+    Digite seu país: <input type="text" name="pais" id="pais">
     <input type="button" value="Verificar" onclick="calcular()">
 
     <div id="res">
-        
+
     </div>
 
     <script>
         function calcular() {
-            var br = document.getElementById('pais')
-            var res = document.getElementById('res')
-            
-            res.innerHTML = (`<p> Seu país digitado é ${br}. </p>`)
+            var pais = document.querySelector("input#pais")
+            var res = document.querySelector("div#res")
 
-            if (br == 'Brasil' || 'brasil'){
-                res.innerHTML += (`<p> Você é Brasileiro! <p>`)
+            var paisc = String(pais.value)
+
+            res.innerHTML = `<p> Seu país digitado é ${paisc}. <p>`
+
+            if (paisc != "Brasil") {
+                res.innerHTML += `<p> Você é Estrangeiro! <p>`
             }
             else {
-                res.innerHTML += (`<p> Você é Estrangeiro! <p>`)
+                res.innerHTML += `<p> Você é Brasileiro! <p>`
             }
         }
     </script>
 
 
 </body>
+
 </html>
