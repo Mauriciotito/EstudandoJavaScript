@@ -1,0 +1,36 @@
+body {
+    background-color: cadetblue;
+    font: normal 15pt Arial;
+}
+
+header {
+    text-align: center;
+    color: white;
+}
+
+section {
+    background: white;
+    padding: 3%;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#msg {
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+#img {
+    border-radius: 100px;
+}
+
+#foto {
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    color: white;
+    font-style: italic;
+}

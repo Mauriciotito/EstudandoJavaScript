@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ex011part2.css">
+    <title>Condição multipla</title>
+</head>
+<body>
+
+    <script>
+
+        var agora = new Date()
+        var diasem = agora.getDay()
+        var mes = agora.getMonth()
+        var dianum = agora.getDate()
+        var ano = agora.getFullYear()
+        var hora = agora.getHours()
+        var min = agora.getMinutes()
+
+        switch(diasem){
+            case 0:
+                document.write('Domingo, ')
+                break
+            case 1:
+                document.write('Segunda-Feira, ')
+                break
+            case 2:
+                document.write('Terça-Feira, ')
+                break
+            case 3:
+                document.write('Quarta-Feira, ')
+                break
+            case 4:
+                document.write('Quinta-Feira, ')
+                break
+            case 5:
+                document.write('Sexta-Feira, ')
+                break
+            case 6:
+                document.write('Sábado, ')
+                break
+        }
+
+        document.write(dianum)
+
+        switch(mes){
+            case 0:
+                document.write(' de Janeiro de ')
+                break
+            case 1:
+                document.write(' de Fevereiro de ')
+                break
+            case 2:
+                document.write(' de Março de ')
+                break
+            case 3:
+                document.write(' de Abril de ')
+                break
+            case 4:
+                document.write(' de Maio de ')
+                break
+            case 5:
+                document.write(' de Junho de ')
+                break
+            case 6:
+                document.write(' de Julho de ')
+                break
+            case 7:
+                document.write(' de Agosto de ')
+                break
+            case 8:
+                document.write(' de Setembro de ')
+                break
+            case 9:
+                document.write(' de Outubro de ')
+                break
+            case 10:
+                document.write(' de Novembro de ')
+                break
+            case 11:
+                document.write(' de Dezembro de ')
+                break
+        }
+
+        document.write(`${ano} às ${hora}:${min}`)
+    </script>
+
+</body>
+</html>
