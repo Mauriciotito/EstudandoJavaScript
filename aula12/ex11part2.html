@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ex011part2.css">
+    <title>Condições part2 (condição aninhada)</title>
+</head>
+<body>
+
+    <script>
+        var idade = 15
+
+        document.write(`Você tem ${idade} anos. <br>`)
+
+        if (idade < 16){
+            document.write('Não vota.')
+        } 
+        else if (idade < 18 || idade > 65){
+            document.write('Voto opcional.')
+        }
+        else {
+            document.write('Voto obrigatório.')
+        }
+    </script>
+
+    <script>
+        var agora = new Date()
+        var hora = agora.getHours()
+        var min = agora.getMinutes()
+        var seg = agora.getSeconds()
+
+        document.write(`<br><br><br> Agora são ${hora}:${min}.<br>`)
+        
+        if(hora >= 6 && hora < 12) {
+            document.write('Bom dia!')
+        }
+        else if (hora >= 12 && hora <= 18){
+            document.write('Boa tarde!')
+        }
+        else if (hora >= 19 && hora <= 24){
+            document.write('Boa noite!')
+        }
+        else {
+            document.write('Boa Madrugada!')
+        }
+    </script>
+
+</body>
+</html>
