@@ -22,7 +22,7 @@ function verificar(){
                 //jovem
                 img.src = 'imagens/jovemhomem.jpg'
             }
-            else if(idade < 50){
+            else if(idade < 60){
                 //adulto
                 img.src = 'imagens/adultohomem.jpg'
             }
@@ -51,8 +51,5 @@ function verificar(){
             }
         }
     }
-    
-    
     res.innerHTML = `Você é um(a) ${gen} de ${idade} anos.`
-    
 }
